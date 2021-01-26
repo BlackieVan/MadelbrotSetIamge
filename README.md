@@ -14,7 +14,7 @@ https://github.com/python-pillow/Pillow
 如果你不知道何为曼德博集合，请点击：https://baike.baidu.com/item/%E6%9B%BC%E5%BE%B7%E5%8D%9A%E9%9B%86%E5%90%88/5831843  
 If you dont know about Mandelbrot Set,pls check https://en.wikipedia.org/wiki/Mandelbrot_set  
 
-!!!此程序由于单线程运算，运行速度慢得离谱，图片大于1000x1000时，谨慎选择，以防砸电脑。
+!!!此程序由于单线程运算，运行速度慢得离谱，图片大于1000x1000时，谨慎选择，以防砸电脑。  
 !!!Due to single thread processing,this program runs stupidly slow,if choose size>1000x1000,prepare to fxxk up your computer.
 
 示例：  
