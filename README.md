@@ -16,7 +16,7 @@ If you dont know about Mandelbrot Set,pls check https://en.wikipedia.org/wiki/Ma
 示例：
 Examples:
 
-![image](https://github.com/BlackieVan/MadelbrotSetIamge/blob/master/Mandelbrot_X-0.4600_Y0.5800_R0.0100_N100_W1000_H1000_1611643273.png?raw=true)
+![image](https://github.com/BlackieVan/MadelbrotSetIamge/blob/master/Examples/Mandelbrot_X-0.4600_Y0.5800_R0.0100_N100_W1000_H1000_1611643273.png?raw=true)
 
 
 
