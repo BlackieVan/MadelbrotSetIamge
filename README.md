@@ -1,5 +1,6 @@
 # MadelbrotSetIamge
 
+
 该程序可在py文件同目录下生成一张曼德博集合的图片
 Will generate a nice image of Mandelbrot Set at the same directory of the .py file
 
@@ -16,7 +17,8 @@ If you dont know about Mandelbrot Set,pls check https://en.wikipedia.org/wiki/Ma
 示例：
 Examples:
 
+![image](https://github.com/BlackieVan/MadelbrotSetIamge/blob/master/Examples/Mandelbrot_X-0.5000_Y0.0000_R1.0000_N100_W1000_H1000_1610692012.png)
+
+![image](https://github.com/BlackieVan/MadelbrotSetIamge/blob/master/Examples/Mandelbrot_X0.3000_Y0.5500_R0.1000_N100_W1000_H1000_1611648033.png)
+
 ![image](https://github.com/BlackieVan/MadelbrotSetIamge/blob/master/Examples/Mandelbrot_X-0.4600_Y0.5800_R0.0100_N100_W1000_H1000_1611643273.png)
-
-
-
