@@ -17,6 +17,11 @@ If you dont know about Mandelbrot Set,pls check https://en.wikipedia.org/wiki/Ma
 !!!此程序由于单线程运算，运行速度慢得离谱，图片大于1000x1000时，谨慎选择，以防砸电脑。  
 !!!Due to single thread processing,this program runs stupidly slow,if choose size>1000x1000,prepare to fxxk up your computer.
 
+更新1：  
+增加了独立的颜色函数文件  
+Update1:  
+Add Standalone ColorFunction file  
+
 示例：  
 Examples:  
 
