@@ -4,17 +4,21 @@ import math
 import cmath
 import ColorFunction as cf
 
+
 # Color Mode of the iamge.
 # "L" for GaryLevel or "RGB" for RGB image.
 colormode = "RGB"
 
+# Color Function (if color mode is "RGB")
+colorfunction=cf.Argon
+
 # Width and Height of the image.
-width  = 100
-height = 100
+width  = 1920
+height = 1080
 
 # Center point X,Y value and Radius
 x0 =  0.3
-y0 =  0.55
+y0 =  0.58
 r  =  0.1
 
 rh   = r
@@ -41,29 +45,30 @@ def mandelbrot(x,y) :
     return n
 
 # Pixel color determined by color mode.
-def pixel(x,y):
-    age=mandelbrot(x,y)*255//n
-    if colormode == "L":
-        return age
-    elif colormode =="RGB":
-        return cf.Yoda_Black(age)
-    else:
-        return 0
-
+if colormode == "L":
+    def pixel(x, y):
+        return mandelbrot(x, y) * 255 // n
+if colormode == "RGB":
+    def pixel(x, y):
+        return colorfunction(mandelbrot(x, y) * 255 // n)
+    
 time_start = time.time()
 
 img = Image.new(colormode,(width,height))
 
-for x in range(width) :
-    for y in range(height) :
-        img.putpixel((x,y),pixel(x,y))
-        
-img.save("Images\\Mandelbrot_X%.4f_Y%.4f_R%.4f_N%d_W%d_H%d_%d.png" %(x0,y0,r,n,width,height,time.time()))
+def fill(width,height):
+    for x in range(width) :
+        for y in range(height) :
+            img.putpixel((x,y),pixel(x,y))
+
+fill(width,height)
+     
+img.save("Images\\Mandelbrot_X%.4f_Y%.4f_R%.4f_N%d_W%d_H%d_" %(x0,y0,r,n,width,height)+time.strftime("%Y%m%d%H%M%S", time.localtime(time.time()))+".png")
 
 time_end = time.time()
 
 print("Done!")
-print("Totally cost %.2f s" %(time_end-time_start))
+print("Totally cost %.3f s" %(time_end-time_start))
 
 
 
