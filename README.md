@@ -22,7 +22,7 @@ If you dont know about Mandelbrot Set,pls check https://en.wikipedia.org/wiki/Ma
 Update1:  
 Add Standalone ColorFunction file  
 
-更新2：
+更新2：  
 1)将图片生成路径改为Images  
 2)优化了一些颜色函数  
 3)增加了颜色函数测试文件，可在Images文件夹下生成一张颜色函数预览图。  
